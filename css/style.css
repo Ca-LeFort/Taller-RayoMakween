@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.footer {
+    border-color: black;
+    border: 20px;
+    background-color: #ccccccd0;
+    padding: 20px;
+    margin-top: auto; /* Esto fuerza al footer a la parte inferior */
+}
+
+/* Estilos para el contenido del footer */
+.footer .copyright {
+    float: left;
+}
+
+.footer .redes-sociales {
+    float: right;
+}
