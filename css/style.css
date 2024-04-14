@@ -27,3 +27,7 @@ body {
 .footer .redes-sociales {
     float: right;
 }
+
+.container-text {
+    padding-left: 20px;
+}

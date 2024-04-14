@@ -7,13 +7,15 @@
   <title>Inicio - Taller Rayo Makween</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
   <!-- NAVBAR INICIO -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
     <div class="container-fluid">
-      <img src="img/logo.png" alt="logo" width="50">
+      <a href="indexlogeado.html"><img src="img/logo.png" alt="logo" width="50"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,18 +66,23 @@
         </a>
       </div>
       <div class="carousel-item">
-        <img src="img/imagen 2.jpg" alt="Chicago" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Mantenimiento anual de una moto</h3>
-          <p>Nuestros mecánicos realizan un mantenimiento de una moto, a la cual le necesitaba su mantención anual.</p>
-        </div>
+        <a href="trabajo2logeado.html">
+          <img src="img/imagen 2.jpg" alt="Chicago" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Mantenimiento anual de una moto</h3>
+            <p>Nuestros mecánicos realizan un mantenimiento de una moto, a la cual le necesitaba su mantención anual.
+            </p>
+          </div>
+        </a>
       </div>
       <div class="carousel-item">
-        <img src="img/imagen 3.jpg" alt="New York" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Cambio de neumático dañado de un vehículo</h3>
-          <p>Nuestros mecánicos realizan un cambio de neumático dañado a un vehículo</p>
-        </div>
+        <a href="trabajo3logueado.html">
+          <img src="img/imagen 3.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Cambio de neumático dañado de un vehículo</h3>
+            <p>Nuestros mecánicos realizan un cambio de neumático dañado a un vehículo</p>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -101,7 +108,7 @@
             <div class="card-body">
               <h4 class="card-title">Daniel González</h4>
               <p class="card-text">Técnico en Mecánica Automotriz, especializado en autosmóviles.</p>
-              <a href="#" class="btn btn-primary">Ver perfil</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMecanico1">Ver perfil</a>
             </div>
           </div>
         </div>
@@ -110,8 +117,9 @@
             <img class="card-img-top" src="img/mecanico 2.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
               <h4 class="card-title">John Pérez</h4>
-              <p class="card-text">Ingeniero en Mecánica Automotri, especializado en revisiones y mantenimiento de autos, camiones y motos.</p>
-              <a href="#" class="btn btn-primary">Ver perfil</a>
+              <p class="card-text">Ingeniero en Mecánica Automotriz, especializado en revisiones y mantenimiento de
+                autos, camiones y motos.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMecanico2">Ver perfil</a>
             </div>
           </div>
         </div>
@@ -121,7 +129,7 @@
             <div class="card-body">
               <h4 class="card-title">Jorge Doe</h4>
               <p class="card-text">Técnico en Mantenimiento de autosmóviles y motos.</p>
-              <a href="#" class="btn btn-primary">Ver perfil</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMecanico3">Ver perfil</a>
             </div>
           </div>
         </div>
@@ -132,7 +140,113 @@
 
     </div>
     <!-- FIN CARTAS -->
+    <hr>
   </div>
+
+  <!-- INICIO NOSOTROS PARA EL INDEX -->
+  <div class="text-center">
+    <h2>QUÉ SOMOS</h2>
+    <br>
+    <div class="col-sm container mb-1 mt-1 p-4 bg-secondary text-white rounded">
+      <p>Somos mecánicos del Taller Rayo Makween, con 15 años de experiencia al ofrecer servicios
+        de alta calidad y satisfacción a nuestros clientes,
+        brindándoles soluciones efectivas y confiables para sus necesidades automotrices.</p>
+    </div>
+    <br>
+  </div>
+  <!-- FIN NOSOTROS PARA EL INDEX -->
+
+  <!-- INICIO MODAL PARA MECÁNICOS -->
+  <!-- MODAL PARA MECÁNICO 1 -->
+  <div class="modal fade" id="modalMecanico1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Daniel González</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="card-img-top mx-auto d-block" src="img/mecanico 1.jpg" alt="Card image" style="width:50%">
+          <hr>
+          <p>Técnico en Mecánica Automotriz, especializado en autosmóviles con experiencia de las marcas: Kia, Nissan y
+            Hyundai.</p>
+          <p>Educación: Instituto Profesional Duoc UC</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL PARA MECÁNICO 1 -->
+
+  <!-- MODAL PARA MECÁNICO 2 -->
+  <div class="modal fade" id="modalMecanico2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">John Pérez</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="card-img-top mx-auto d-block" src="img/mecanico 2.jpg" alt="Card image" style="width:50%">
+          <hr>
+          <p>Ingeniero en Mecánica Automotriz, especializado en revisiones y mantenimiento de autos, camiones y motos.
+          </p>
+          <p>Educación: Instituto Profesional Duoc UC</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL PARA MECÁNICO 2 -->
+
+  <!-- MODAL PARA MECÁNICO 3 -->
+  <div class="modal fade" id="modalMecanico3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Jorge Doe</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="card-img-top mx-auto d-block" src="img/mecanico 3.jpg" alt="Card image" style="width:50%">
+          <hr>
+          <p>Técnico en Mantenimiento de autosmóviles y motos con experiencia en marcas: Chevrolet, Toyota, Renault y
+            Haval.</p>
+          <p>Educación: Instituto Profesional Duoc UC</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL PARA MECÁNICO 3 -->
+  <!-- FIN MODAL PARA MECÁNICOS -->
 
   <!-- INICIO FOOTER -->
   <footer class="footer">
@@ -144,19 +258,20 @@
       <section class="mb-4">
         <!-- Facebook -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
-          role="button"><i class="fab fa-facebook-f"></i></a>
+          role="button">
+          <i class="fa fa-facebook"></i></a>
 
         <!-- Twitter -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
-          role="button"><i class="fab fa-twitter"></i></a>
+          role="button"><i class="fa fa-twitter"></i></a>
 
         <!-- Instagram -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
-          role="button"><i class="fab fa-instagram"></i></a>
+          role="button"><i class="fa fa-instagram"></i></a>
 
         <!-- Linkedin -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
-          role="button"><i class="fab fa-linkedin-in"></i></a>
+          role="button"><i class="fa fa-linkedin"></i></a>
       </section>
     </div>
   </footer>

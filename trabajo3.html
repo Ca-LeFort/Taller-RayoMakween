@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Taller Rayo Makween</title>
+  <title>Inicio - Taller Rayo Makween</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,7 +28,7 @@
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesión</a>
@@ -43,49 +43,43 @@
   </nav>
   <!-- FIN NAVBAR -->
 
-  <!-- INICIO FORMULARIO -->
-  <div class="formularioContacto">
-    <div class="row">
-      <div class="col-sm-3 text-center ml-3"></div>
-      <div class="col-sm-6 text-center ml-3">
-        <h4 class="mt-4">Formulario de Contacto</h4>
-        <p class="">Contáctanos en caso que tengas dudas, reclamos o realizar una consulta en general. Completa el
-          siguiente formulario y nos pondremos en contacto contigo.</p>
-        <form action="">
-          <div class="mb-3 mt-3">
-            <label for="nombreApellido" class="form-label">Nombre y Apellido:</label>
-            <input type="text" class="form-control" id="txtNombreApellido" placeholder="Nombre y Apellido"
-              name="txtNombreApellido">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Correo:</label>
-            <input type="email" class="form-control" id="txtCorreo" placeholder="Nombre@example.com" name="txtCorreo">
-          </div>
-          <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono:</label>
-            <input type="number" class="form-control" id="txtTelefono" placeholder="+56 9 1234 5678" name="txtTelefono">
-          </div>
-          <div class="mb-3">
-            <label for="consulta" class="form-label">Tipo de consulta:</label>
-            <select class="form-select mt-1">
-              <option>Elige una opción...</option>
-              <option>Consulta general</option>
-              <option>Reclamo</option>
-              <option>Garantía</option>
-            </select>
-          </div>
-          <div class="mb-4 mt-3">
-            <label for="comentario" class="mb-2">Información adicional:</label>
-            <textarea class="form-control" rows="5" id="comment" placeholder="Empieza a escribir aquí..."
-              name="text"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark">Enviar Formulario</button>
-        </form>
-        <br>
-      </div>
+  <!-- INICIO CONTENIDO -->
+  <div>
+    <div class="text-center mt-4">
+        <img class="img-fluid" src="img/imagen 3.jpg" alt="Trabajo 1">
+        <p>Fecha: 02/10/2023</p>
+        <h2>Cambio de neumático dañado de un vehículo</h2>
+        <p>
+            Nuestros mecánicos realizan un cambio de neumático dañado a un vehículo, también el cliente solicitó el mantenimiento de su
+            vehículo.
+        </p>
     </div>
+    <div class="container-text">
+        <p><dt>Mecánicos responsables: </dt></p>
+        <dd>Daniel González</dd>
+        <dd>Jorge Doe</dd>
+        <p><dt>Herramientas usadas: </dt></p>
+        <dl>
+        <dd>- Gatos hidráulicos.</dd>
+        <dd>- Llaves de impacto.</dd>
+        <dd>- Multímetro automotriz.</dd>
+        <dd>- Cajas y carros de herramientas.</dd>
+        <dd>- Boinas para pulido.</dd>
+        </dl>
+        
+    </div>
+    
   </div>
-  <!-- FIN FORMULARIO -->
+  <hr>
+  <!-- FIN CONTENIDO -->
+
+  <!-- INICIO BOTÓN GALERIA -->
+  <div class="container-text">
+    <h5>Aquí puedes ver nuestras imágenes de los otros trabajos realizados:</h5>
+    <a href="galeria.html"><button type="button" class="btn btn-outline-primary">Galería</button></a>
+  </div>
+  <br>
+  <!-- FIN BOTÓN GALERIA -->
 
   <!-- INICIO MODAL INICIO SESION -->
   <div class="modal fade" id="myModal">
